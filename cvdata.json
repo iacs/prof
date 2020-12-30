@@ -8,12 +8,13 @@
         "homepage": "philomathy.net",
         "location": "Stockholm, Sweden"
     },
+    "experience_start": "2013-10-01",
     "skills": [
         {
             "title": "Programming",
             "content": [
                 {
-                    "name": "Python",
+                    "name": "Python 3",
                     "lvl": 4
                 },
                 {
@@ -29,6 +30,23 @@
                     "lvl": 2
                 }
             ]
+        },
+        {
+            "title": "Languages",
+            "content": [
+                {
+                    "name": "Spanish",
+                    "lvl": 5
+                },
+                {
+                    "name": "English",
+                    "lvl": 5
+                },
+                {
+                    "name": "Swedish",
+                    "lvl": 1
+                }
+            ]
         }
     ],
     "unranked": [
@@ -36,7 +54,36 @@
             "title": "Technologies",
             "content": [
                 "HTML5",
-                "CSS3"
+                "CSS3",
+                "NoSQL",
+                "SASS/SCSS"
+            ]
+        },
+        {
+            "title": "Frameworks & libraries",
+            "content": [
+                "React",
+                "Vue",
+                "D3",
+                "SQLAlchemy"
+            ]
+        },
+        {
+            "title": "Software & tools",
+            "content": [
+                "Docker",
+                "Webpack",
+                "Jest",
+                "MongoDB",
+                "RabbitMQ"
+            ]
+        },
+        {
+            "title": "Methodologies",
+            "content": [
+                "Scrum",
+                "Kanban",
+                "Agile"
             ]
         }
     ],
@@ -45,20 +92,86 @@
             "title": "Work experience",
             "content": [
                 {
-                    "period": "2001 - 2002",
-                    "name": "Jobbing",
-                    "role": "dev",
-                    "blurb": "I jobbed for people"
+                    "period": "2020/03 - 2020/12",
+                    "name": "Ericsson",
+                    "role": "Devops",
+                    "blurb": "Iago developed the backend of a fault prediction system consisting of two parts, data collection based on trouble reports and prediction done with machine learning. The solution was created using micro services by a team of three developers and a data scientist.",
+                    "competences": [
+                        "Microservice Architecture",
+                        "Machine Learning",
+                        "Python",
+                        "Apache NiFi"
+                    ]
                 },
                 {
-                    "period": "2001 - 2002",
-                    "name": "Bottomliner",
-                    "blurb": "I established the bottom line",
+                    "period": "2017/11 - 2019/12",
+                    "name": "Ericsson",
+                    "role": "Developer",
+                    "blurb": "Iago was responsible for the front-end of a data analytics solution for Ericsson's Continuous Integration messaging infrastructure. The solution collects build data and then extracts useful insights from it, to be displayed as an overview for the end user. Iago took ownership over the front-end, defining the structure and architecture. The solution consists of a web frontend, a backend API with MongoDB and data collection and processing applications",
                     "competences": [
-                        "yaba",
-                        "daba",
-                        "doo"
+                        "Big Data",
+                        "Python 3",
+                        "JavaScript",
+                        "MongoDB",
+                        "React",
+                        "D3.js",
+                        "SASS",
+                        "RabbitMQ"
                     ]
+                },
+                {
+                    "period": "2017",
+                    "name": "Skyresponse",
+                    "role": "Developer",
+                    "blurb": "Iago developed a connector extension in Javascript between the Skyresponse alarm tracking & managing system API and the IoT development platform ThingWorx by PTC. The extension allows ThingWorx developers to use the alarm services of Skyresponse within the ThingWorx platform via integration with a RESTful API",
+                    "competences": [
+                        "IoT Architecture",
+                        "REST",
+                        "JavaScript"
+                    ]
+                },
+                {
+                    "period": "2016/11 - 2017/07",
+                    "name": "Giesecke & Devrient",
+                    "role": "Scrum Master",
+                    "blurb": "Iago worked as scrum master combined with part-time developer responsibilities for a team of 7+ people, internal employees and consultants. Responsible for driving the sprint demos and retrospectives, as well as assisting the PO with sprint planning and backlog refinement.",
+                    "competences": [
+                        "Scrum",
+                        "Agile"
+                    ]
+                },
+                {
+                    "period": "2013/09 - 2017/07",
+                    "name": "Giesecke & Devrient",
+                    "role": "Developer",
+                    "blurb": "Iago worked in the development of a system to manage mobile subscriptions for SIM cards geared to embedded, machine to machine use cases. Implementation of a backend server architecture consisting of Spring boot servers running in Docker containers, and using Couchbase as a NoSQL datastore",
+                    "competences": [
+                        "Java",
+                        "Docker",
+                        "Couchbase",
+                        "Spring Boot",
+                        "Jenkins"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Education",
+            "content": [
+                {
+                    "period": "2012",
+                    "name": "Degree in Computer Science",
+                    "blurb": "Bachelor’s degree in Computer Science: Technical systems engineering from Universidad de Santiago de Compostela"
+                },
+                {
+                    "period": "2012",
+                    "name": "Exchange studies",
+                    "blurb": "Studies abroad as part of the ERASMUS exchange programme at Politechnika Gdańska (Gdańsk University of Technology) in Gdańsk, Poland"
+                },
+                {
+                    "period": "2014",
+                    "name": "Videogame creation with Unity",
+                    "blurb": "Course in videogame creation with Unity by SEAS, (Estudios Superiores Abiertos)"
                 }
             ]
         }
