@@ -1,4 +1,7 @@
 #!/bin/bash
 
+SRCURL="http://github.com/iacs"
+
 source venv/bin/activate
-python3 stamper.py -i cvdata.json cvtemplate.html > cv.html
+qr --factory=svg-path $SRCURL > assets/img/qrcode.svg
+python3 stamper.py -i cvdata.json cvtemplate.jinja > cv.html

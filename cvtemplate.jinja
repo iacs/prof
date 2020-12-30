@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Iago Mosquera | CV</title>
+</head>
+
+<body>
+    <h1>{{name}}</h1>
+    <h2>{{jobtitle}}</h2>
+    <p>{{blurb}}</p>
+    <div class="contact">
+        <ul>
+            <li>{{contact.tlf}}</li>
+            <li>{{contact.email}}</li>
+            <li>{{contact.homepage}}</li>
+            <li>Location: {{contact.location}}</li>
+        </ul>
+    </div>
+    <!-- SKILLS -->
+    <h2>Skills</h2>
+    {% for cat in skills %}
+    <h3>{{cat.title}}</h3>
+    <table class="skill">
+        {% for item in cat.content %}
+        <tr>
+            <td>{{item.name}}</td>
+            <td>
+                {%for pip in range(item.lvl)%}
+                <i class="pip-on">*</i>
+                {% endfor%}
+                {%for pip in range(5 - item.lvl)%}
+                <i class="pip-off">*</i>
+                {% endfor%}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endfor %}
+    {% for cat in unranked %}
+    <h3>{{cat.title}}</h3>
+    <div class="unranked">
+        <ul>
+            {% for item in cat.content %}
+            <li>{{item}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+    <!-- MAIN SECTION -->
+    {% for cat in milestones %}
+    <h2>{{cat.title}}</h2>
+    <table class="milestone">
+        {% for item in cat.content %}
+        <tr>
+            <td>{{item.period}}</td>
+            <td>
+                <h4>{{item.name}}</h4>
+                {% if 'role' in item %}<h5>{{item.role}}</h5>{% endif %}
+                <p>{{item.blurb}}</p>
+                {% if 'competences' in item %}
+                <h5>Competences</h5>
+                <p>{{item.competences | join(', ')}}</p>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    {%endfor%}
+    <!-- ADDITIONALS -->
+    {% for cat in adds %}
+    <h2>{{cat.title}}</h2>
+    <ul>
+        {%for item in cat.content%}
+        <li>{{item}}</li>
+        {%endfor%}
+    </ul>
+    {%endfor%}
+
+    <footer>
+        <p>This résumé was generated on {{gen_date}}</p>
+        <p>Check the source code at <img src="assets/img/qrcode.svg" alt="Source code"></p>
+    </footer>
+
+</body>
+
+</html>

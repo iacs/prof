@@ -11,7 +11,7 @@ $ jj2.py -v name=Bugs template.txt
 Hello Bugs
 $
 '''
-
+import datetime
 import jinja2
 import json
 
@@ -39,13 +39,13 @@ def main(argv=None):
 
     parser = ArgumentParser(description='Expand Jinja2 template')
     parser.add_argument('template', help='template file to expand',
-        type=FileType('r'), nargs='?', default=sys.stdin)
+                        type=FileType('r'), nargs='?', default=sys.stdin)
     parser.add_argument('--var', '-v', action='append',
-        help='template variables (in X=Y format)')
+                        help='template variables (in X=Y format)')
     parser.add_argument('--output', '-o', help='output file',
-        type=FileType('w'), nargs='?', default=sys.stdout)
+                        type=FileType('w'), nargs='?', default=sys.stdout)
     parser.add_argument('--vars-file', '-i', help='vars files (YAML or JSON)',
-        nargs='?')
+                        nargs='?')
 
     args = parser.parse_args(argv[1:])
 
@@ -57,6 +57,9 @@ def main(argv=None):
     # Fail on undefined
     env = jinja2.Environment(undefined=jinja2.StrictUndefined)
     template = env.from_string(args.template.read())
+
+    gen_date = datetime.date.today()
+    tvars['gen_date'] = gen_date
 
     args.output.write(template.render(tvars))
 

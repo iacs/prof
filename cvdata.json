@@ -1,3 +1,74 @@
 {
-    "name": "Iago Mosquera"
+    "name": "Iago Mosquera",
+    "jobtitle": "Software Engineer",
+    "blurb": "Iago is a full stack developer with a degree in Computer Science. He enjoys designing and developing systems and learning new technologies. He has experience building frontends in JavaScript/React, microservice-based Java backends, as a full stack developer in a data analytics solution and as a Scrum master for a team of over 7 members. He has collaborated with several international teams and even remote teams (Sweden – India)",
+    "contact": {
+        "email": "flackon@gmail.com",
+        "tlf": "(+46) 709 188 258",
+        "homepage": "philomathy.net",
+        "location": "Stockholm, Sweden"
+    },
+    "skills": [
+        {
+            "title": "Programming",
+            "content": [
+                {
+                    "name": "Python",
+                    "lvl": 4
+                },
+                {
+                    "name": "Javascript",
+                    "lvl": 3
+                },
+                {
+                    "name": "Java",
+                    "lvl": 3
+                },
+                {
+                    "name": "C#",
+                    "lvl": 2
+                }
+            ]
+        }
+    ],
+    "unranked": [
+        {
+            "title": "Technologies",
+            "content": [
+                "HTML5",
+                "CSS3"
+            ]
+        }
+    ],
+    "milestones": [
+        {
+            "title": "Work experience",
+            "content": [
+                {
+                    "period": "2001 - 2002",
+                    "name": "Jobbing",
+                    "role": "dev",
+                    "blurb": "I jobbed for people"
+                },
+                {
+                    "period": "2001 - 2002",
+                    "name": "Bottomliner",
+                    "blurb": "I established the bottom line",
+                    "competences": [
+                        "yaba",
+                        "daba",
+                        "doo"
+                    ]
+                }
+            ]
+        }
+    ],
+    "adds": [
+        {
+            "title": "Certificates",
+            "content": [
+                "Scrum Master by Scrum Alliance"
+            ]
+        }
+    ]
 }
