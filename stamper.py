@@ -59,7 +59,8 @@ def main(argv=None):
     template = env.from_string(args.template.read())
 
     gen_date = datetime.date.today()
-    tvars['gen_date'] = gen_date
+    date_str = gen_date.strftime('%B of %Y')
+    tvars['gen_date'] = date_str
 
     args.output.write(template.render(tvars))
 

@@ -1,3 +1,2 @@
-Jinja2==2.11
-weasyprint==53.3
-qrcode[pil]==6.1
+Jinja2==3.1.2
+qrcode[pil]==7.3.1

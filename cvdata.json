@@ -1,7 +1,7 @@
 {
     "name": "Iago Mosquera",
     "jobtitle": "Software Engineer",
-    "blurb": "Iago is a full stack developer with a degree in Computer Science. He enjoys designing and developing systems and learning new technologies. He has experience building frontends in JavaScript/React, microservice-based Java backends, as a full stack developer in a data analytics solution and as a Scrum master for a team of over 7 members. He has collaborated with several international teams and even remote teams (Sweden – India)",
+    "blurb": "Iago is a full stack developer with a degree in Computer Science. He enjoys designing and developing systems and learning new technologies. He has experience building frontends in JavaScript/React, microservice-based backends in Python, as a full stack developer in a data analytics solution and as a Scrum master for a team of over 7 members. He has collaborated with several international teams and even remote teams (Sweden – India)",
     "contact": {
         "email": "flackon@gmail.com",
         "tlf": "(+46) 709 188 258",
@@ -95,7 +95,7 @@
                     "period": "2020/03 - 2020/12",
                     "name": "Ericsson",
                     "role": "Devops",
-                    "blurb": "Iago developed the backend of a fault prediction system consisting of two parts, data collection based on trouble reports and prediction done with machine learning. The solution was created using micro services by a team of three developers and a data scientist.",
+                    "blurb": "Iago developed the backend of a fault forecasting system consisting of two parts, data collection based on trouble reports and prediction done with machine learning. The solution was created using micro services by a team of three developers and a data scientist.",
                     "competences": [
                         "Microservice Architecture",
                         "Machine Learning",

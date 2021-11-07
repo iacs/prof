@@ -1,110 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="icons.css">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="icons.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Iago Mosquera | CV</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="cv">
-        <div class="main-section">
-            <h1 class="name">{{name}}</h1>
-            <h2>{{jobtitle}}</h2>
+      <div class="row">
+        <div class="col-single">
+          <h1 class="name">{{ name }}</h1>
+          <h2>{{ jobtitle }}</h2>
         </div>
-        <div class="heading main-section">
-            <p class="blurb">{{blurb}}</p>
-        </div>
-        <div class="contact side-section">
-            <ul>
-                <li><i class="icon icon-phone"></i> {{contact.tlf}}</li>
-                <li><i class="icon icon-mail"></i> {{contact.email}}</li>
-                <li><i class="icon icon-sphere"></i> {{contact.homepage}}</li>
-                <li><i class="icon icon-location"></i> {{contact.location}}</li>
-            </ul>
-        </div>
-        <!-- <hr></hr> -->
-        <!-- MAIN SECTION -->
-        <div class="main-area main-section">
-            {% for cat in milestones %}
-            <h2>{{cat.title}}</h2>
-            <div class="textarea">
-                <table class="milestone">
-                    {% for item in cat.content %}
-                    <tr>
-                        <td>{{item.period}}</td>
-                        <td>
-                            <h4>{{item.name}}</h4>
-                            {% if 'role' in item %}<h5>{{item.role}}</h5>{% endif %}
-                            <p>{{item.blurb}}</p>
-                            {% if 'competences' in item %}
-                            <h5>Competences</h5>
-                            <p>{{item.competences | join(', ')}}</p>
-                            {% endif %}
-                        </td>
-                    </tr>
-                    {% endfor %}
-                </table>
+      </div>
+      <div class="main-area">
+        <!-- CONTACT INFO -->
+        <div class="row">
+          <div class="horizontal">
+            <p class="pad-text" style="width: 70%">
+              {{ blurb }}
+            </p>
+            <div class="pad-text border-l" style="width: 30%">
+              <ul>
+                <li>
+                  <i class="icon icon-phone"></i>
+                  {{ contact.tlf }}
+                </li>
+                <li>
+                  <i class="icon icon-mail"></i>
+                  {{ contact.email }}
+                </li>
+                <li>
+                  <i class="icon icon-sphere"></i>
+                  {{ contact.homepage }}
+                </li>
+                <li>
+                  <i class="icon icon-location"></i>
+                  {{ contact.location }}
+                </li>
+              </ul>
             </div>
-            {%endfor%}
-            <!-- ADDITIONALS -->
-            {% for cat in adds %}
-            <h2>{{cat.title}}</h2>
-            <div class="textarea">
-                <ul>
-                    {%for item in cat.content%}
-                    <li>{{item}}</li>
-                    {%endfor%}
-                </ul>
-            </div>
+          </div>
         </div>
-        {%endfor%}
+        <!-- MILESTONES -->
+        {% for cat in milestones %}
+        <div class="row section-header">
+          <h2>{{ cat.title }}</h2>
+        </div>
+        <div class="row">
+          <table class="top-align">
+            <tbody>
+              {% for item in cat.content %}
+              <tr>
+                <td>
+                  <div class="pad-compact font-bold">{{ item.name }}</div>
+                </td>
+                <td>
+                  <div class="pad-compact">
+                    {% if 'role' in item %}
+                    <h3 class="font-italic">{{ item.role }}</h3>
+                    {% endif %}
+                    <h4 class="muted mb">{{ item.period }}</h4>
+                    <div class="text-sm mb">{{ item.blurb }}</div>
+                    {% if 'competences' in item %}
+                    <div>
+                      <h4>Competences:</h4>
+                      <p>{{item.competences | join(', ')}}</p>
+                    </div>
+                    {% endif %}
+                  </div>
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        {% endfor %}
         <!-- SKILLS -->
-        <div class="side-area side-section">
-            <h2>Skills</h2>
-            {% for cat in skills %}
-            <div class="textarea">
-            <h3>{{cat.title}}</h3>
-            <table class="skill">
-                {% for item in cat.content %}
-                <tr>
-                    <td>{{item.name}}</td>
-                    <td class="pips">
-                        {%for pip in range(item.lvl)%}
-                        <span class="pip pip-on"></span>
-                        {% endfor%}
-                        {%for pip in range(5 - item.lvl)%}
-                        <span class="pip pip-off"></span>
-                        {% endfor%}
-                    </td>
-                </tr>
-                {% endfor %}
-            </table>
-            </div>
-            {% endfor %}
-            {% for cat in unranked %}
-            <div class="textarea">
-            <h3>{{cat.title}}</h3>
-            <div class="unranked">
-                <ul>
-                    {% for item in cat.content %}
-                    <li>{{item}}</li>
-                    {% endfor %}
-                </ul>
-            </div>
-            </div>
-            {% endfor %}
+        <div class="row section-header">
+          <h2>Skills</h2>
         </div>
-
-
-        <footer class="full-section">
-            <p>This résumé was generated on {{gen_date}}</p>
-            <p>Check the source code at <img src="assets/img/qrcode.svg" alt="Source code"></p>
-        </footer>
+        <div class="horizontal">
+          <div>
+            {% for cat in skills %}
+            <div class="row pad-compact">
+              <table>
+                <thead>
+                  <tr>
+                    <td>
+                      <h3>{{ cat.title }}</h3>
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  {%for item in cat.content%}
+                  <tr>
+                    <td>{{ item.name }}</td>
+                    <td>
+                      {%for pip in range(item.lvl)%}
+                      <span class="pip pip-on"></span>
+                      {% endfor%} {%for pip in range(5 - item.lvl)%}
+                      <span class="pip pip-off"></span>
+                      {% endfor%}
+                    </td>
+                  </tr>
+                  {%endfor%}
+                </tbody>
+              </table>
+            </div>
+            {% endfor %}
+          </div>
+          <div class="pad-compact border-l">
+            {%for cat in unranked%}
+            <h3>{{ cat.title }}</h3>
+            <p class="mb-m">{{cat.content | join(', ')}}</p>
+            {% endfor %}
+          </div>
+        </div>
+        <!-- OTHER -->
+        <div class="row border-t">
+          <div class="horizontal content-between" style="width: 100%">
+            <div class="pad-text" style="align-self: flex-end">
+              <p>This résumé was generated on {{ gen_date }}</p>
+              <p>
+                You may check the source code at the URL pointed by the QR code
+              </p>
+            </div>
+            <img src="assets/img/qrcode.svg" alt="Source code" />
+          </div>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
