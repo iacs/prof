@@ -1,187 +1,187 @@
 {
-    "name": "Iago Mosquera",
-    "jobtitle": "Software Engineer",
-    "blurb": "Iago is a full stack developer with a degree in Computer Science. He enjoys designing and developing systems and learning new technologies. He has experience building frontends in JavaScript/React, microservice-based backends in Python, as a full stack developer in a data analytics solution and as a Scrum master for a team of over 7 members. He has collaborated with several international teams and even remote teams (Sweden – India)",
-    "contact": {
-        "email": "flackon@gmail.com",
-        "tlf": "(+46) 709 188 258",
-        "homepage": "philomathy.net",
-        "location": "Stockholm, Sweden"
+  "name": "Iago Mosquera",
+  "jobtitle": "Software Engineer",
+  "blurb": "Iago is a full stack developer with a degree in Computer Science. He enjoys designing and developing systems and learning new technologies. He has experience building frontends in JavaScript/React, microservice-based backends in Python, as a full stack developer in a data analytics solution and as a Scrum master for a team of over 7 members. He has collaborated with several international teams and even remote teams (Sweden – India)",
+  "contact": {
+    "email": "flackon@gmail.com",
+    "tlf": "(+46) 709 188 258",
+    "homepage": "philomathy.net",
+    "location": "Stockholm, Sweden"
+  },
+  "experience_start": "2013-10-01",
+  "skills": [
+    {
+      "title": "Programming",
+      "content": [
+        {
+          "name": "Python 3",
+          "lvl": 4
+        },
+        {
+          "name": "Javascript",
+          "lvl": 5
+        },
+        {
+          "name": "Java",
+          "lvl": 2
+        },
+        {
+          "name": "Rust",
+          "lvl": 1
+        }
+      ]
     },
-    "experience_start": "2013-10-01",
-    "skills": [
+    {
+      "title": "Languages",
+      "content": [
         {
-            "title": "Programming",
-            "content": [
-                {
-                    "name": "Python 3",
-                    "lvl": 4
-                },
-                {
-                    "name": "Javascript",
-                    "lvl": 3
-                },
-                {
-                    "name": "Java",
-                    "lvl": 3
-                },
-                {
-                    "name": "C#",
-                    "lvl": 2
-                }
-            ]
+          "name": "Spanish",
+          "lvl": 5
         },
         {
-            "title": "Languages",
-            "content": [
-                {
-                    "name": "Spanish",
-                    "lvl": 5
-                },
-                {
-                    "name": "English",
-                    "lvl": 5
-                },
-                {
-                    "name": "Swedish",
-                    "lvl": 1
-                }
-            ]
+          "name": "English",
+          "lvl": 5
+        },
+        {
+          "name": "Swedish",
+          "lvl": 2
         }
-    ],
-    "unranked": [
+      ]
+    }
+  ],
+  "unranked": [
+    {
+      "title": "Technologies",
+      "content": ["HTML5", "CSS3", "NoSQL", "SASS/SCSS"]
+    },
+    {
+      "title": "Frameworks & libraries",
+      "content": [
+        "React",
+        "Redux",
+        "Tailwindcss",
+        "D3",
+        "Gatsby",
+        "Vue",
+        "SQLAlchemy"
+      ]
+    },
+    {
+      "title": "Software & tools",
+      "content": ["Docker", "Webpack", "Jest", "MongoDB", "RabbitMQ"]
+    },
+    {
+      "title": "Methodologies",
+      "content": ["Scrum", "Kanban", "Agile"]
+    }
+  ],
+  "milestones": [
+    {
+      "title": "Work experience",
+      "content": [
         {
-            "title": "Technologies",
-            "content": [
-                "HTML5",
-                "CSS3",
-                "NoSQL",
-                "SASS/SCSS"
-            ]
+          "period": "2021/06 - ongoing",
+          "name": "Emblasoft AB",
+          "role": "Web app developer",
+          "blurb": "Sole developer of an application for managing and testing mobile networks. The application consists of a web frontend that generates data files and interfaces with Emblasoft's own tools and APIs, unifying them under a single dashboard. Used for testing and measuring different indicators of mobile networks and data connections.",
+          "competences": [
+            "React",
+            "JavaScript",
+            "REST APIs",
+            "Tailwind CSS",
+            "JSON",
+            "VMEs"
+          ]
         },
         {
-            "title": "Frameworks & libraries",
-            "content": [
-                "React",
-                "Vue",
-                "D3",
-                "SQLAlchemy"
-            ]
+          "period": "2021/02 - 2021/05",
+          "name": "Werlabs",
+          "role": "Frontend developer",
+          "blurb": "Developer of a React-based appointment booking frontend for a medical system, used a design system built with Tailwind CSS and React functional components.",
+          "competences": ["React", "TypeScript"]
         },
         {
-            "title": "Software & tools",
-            "content": [
-                "Docker",
-                "Webpack",
-                "Jest",
-                "MongoDB",
-                "RabbitMQ"
-            ]
+          "period": "2020/03 - 2020/12",
+          "name": "Ericsson",
+          "role": "Devops",
+          "blurb": "Developer of the backend of a fault forecasting system consisting of two parts: data collection based on trouble reports and prediction done with machine learning. The solution was created using micro services by a team of three developers and a data scientist.",
+          "competences": [
+            "Microservice Architecture",
+            "Machine Learning",
+            "Python",
+            "Apache NiFi"
+          ]
         },
         {
-            "title": "Methodologies",
-            "content": [
-                "Scrum",
-                "Kanban",
-                "Agile"
-            ]
+          "period": "2017/11 - 2019/12",
+          "name": "Ericsson",
+          "role": "Full-stack developer",
+          "blurb": "Responsible for development of a data analytics solution for Ericsson's Continuous Integration messaging infrastructure. The solution collects build data and then extracts useful insights from it, to be displayed as an overview for the end user. Part of a small team, I helped define and implement the planning and architecture. The solution consists of a web frontend, a backend API with MongoDB and data collection and processing applications",
+          "competences": [
+            "Big Data",
+            "Python 3",
+            "JavaScript",
+            "MongoDB",
+            "React",
+            "D3.js",
+            "SASS",
+            "RabbitMQ"
+          ]
+        },
+        {
+          "period": "2017",
+          "name": "Skyresponse",
+          "role": "Developer",
+          "blurb": "Implemented a connector extension in Javascript between the Skyresponse alarm tracking & managing system API and the IoT development platform ThingWorx by PTC. The extension allows ThingWorx developers to use the alarm services of Skyresponse within the ThingWorx platform via integration with a RESTful API",
+          "competences": ["IoT Architecture", "REST", "JavaScript"]
+        },
+        {
+          "period": "2016/11 - 2017/07",
+          "name": "Giesecke & Devrient",
+          "role": "Scrum Master",
+          "blurb": "Worked as scrum master combined with part-time developer responsibilities for a medium size team (7-12 people), comprising both internal employees and consultants. Responsible for driving the sprint demos and retrospectives, as well as assisting the PO with sprint planning and backlog refinement.",
+          "competences": ["Scrum", "Agile"]
+        },
+        {
+          "period": "2013/09 - 2017/07",
+          "name": "Giesecke & Devrient",
+          "role": "Developer",
+          "blurb": "Contributed in the development of a system to manage mobile subscriptions for SIM cards geared to embedded, machine to machine use cases. Implementation of a backend server architecture consisting of Spring boot servers running in Docker containers, and using Couchbase as a NoSQL datastore",
+          "competences": [
+            "Java",
+            "Docker",
+            "Couchbase",
+            "Spring Boot",
+            "Jenkins"
+          ]
         }
-    ],
-    "milestones": [
+      ]
+    },
+    {
+      "title": "Education",
+      "content": [
         {
-            "title": "Work experience",
-            "content": [
-                {
-                    "period": "2020/03 - 2020/12",
-                    "name": "Ericsson",
-                    "role": "Devops",
-                    "blurb": "Iago developed the backend of a fault forecasting system consisting of two parts, data collection based on trouble reports and prediction done with machine learning. The solution was created using micro services by a team of three developers and a data scientist.",
-                    "competences": [
-                        "Microservice Architecture",
-                        "Machine Learning",
-                        "Python",
-                        "Apache NiFi"
-                    ]
-                },
-                {
-                    "period": "2017/11 - 2019/12",
-                    "name": "Ericsson",
-                    "role": "Developer",
-                    "blurb": "Iago was responsible for the front-end of a data analytics solution for Ericsson's Continuous Integration messaging infrastructure. The solution collects build data and then extracts useful insights from it, to be displayed as an overview for the end user. Iago took ownership over the front-end, defining the structure and architecture. The solution consists of a web frontend, a backend API with MongoDB and data collection and processing applications",
-                    "competences": [
-                        "Big Data",
-                        "Python 3",
-                        "JavaScript",
-                        "MongoDB",
-                        "React",
-                        "D3.js",
-                        "SASS",
-                        "RabbitMQ"
-                    ]
-                },
-                {
-                    "period": "2017",
-                    "name": "Skyresponse",
-                    "role": "Developer",
-                    "blurb": "Iago developed a connector extension in Javascript between the Skyresponse alarm tracking & managing system API and the IoT development platform ThingWorx by PTC. The extension allows ThingWorx developers to use the alarm services of Skyresponse within the ThingWorx platform via integration with a RESTful API",
-                    "competences": [
-                        "IoT Architecture",
-                        "REST",
-                        "JavaScript"
-                    ]
-                },
-                {
-                    "period": "2016/11 - 2017/07",
-                    "name": "Giesecke & Devrient",
-                    "role": "Scrum Master",
-                    "blurb": "Iago worked as scrum master combined with part-time developer responsibilities for a team of 7+ people, internal employees and consultants. Responsible for driving the sprint demos and retrospectives, as well as assisting the PO with sprint planning and backlog refinement.",
-                    "competences": [
-                        "Scrum",
-                        "Agile"
-                    ]
-                },
-                {
-                    "period": "2013/09 - 2017/07",
-                    "name": "Giesecke & Devrient",
-                    "role": "Developer",
-                    "blurb": "Iago worked in the development of a system to manage mobile subscriptions for SIM cards geared to embedded, machine to machine use cases. Implementation of a backend server architecture consisting of Spring boot servers running in Docker containers, and using Couchbase as a NoSQL datastore",
-                    "competences": [
-                        "Java",
-                        "Docker",
-                        "Couchbase",
-                        "Spring Boot",
-                        "Jenkins"
-                    ]
-                }
-            ]
+          "period": "2012",
+          "name": "Degree in Computer Science",
+          "blurb": "Bachelor’s degree in Computer Science: Technical systems engineering from Universidad de Santiago de Compostela"
         },
         {
-            "title": "Education",
-            "content": [
-                {
-                    "period": "2012",
-                    "name": "Degree in Computer Science",
-                    "blurb": "Bachelor’s degree in Computer Science: Technical systems engineering from Universidad de Santiago de Compostela"
-                },
-                {
-                    "period": "2012",
-                    "name": "Exchange studies",
-                    "blurb": "Studies abroad as part of the ERASMUS exchange programme at Politechnika Gdańska (Gdańsk University of Technology) in Gdańsk, Poland"
-                },
-                {
-                    "period": "2014",
-                    "name": "Videogame creation with Unity",
-                    "blurb": "Course in videogame creation with Unity by SEAS, (Estudios Superiores Abiertos)"
-                }
-            ]
-        }
-    ],
-    "adds": [
+          "period": "2012",
+          "name": "Exchange studies",
+          "blurb": "Studies abroad as part of the ERASMUS exchange programme at Politechnika Gdańska (Gdańsk University of Technology) in Gdańsk, Poland"
+        },
         {
-            "title": "Certificates",
-            "content": [
-                "Scrum Master by Scrum Alliance"
-            ]
+          "period": "2014",
+          "name": "Videogame creation with Unity",
+          "blurb": "Course in videogame creation with Unity by SEAS, (Estudios Superiores Abiertos)"
         }
-    ]
+      ]
+    }
+  ],
+  "adds": [
+    {
+      "title": "Certificates",
+      "content": ["Scrum Master by Scrum Alliance"]
+    }
+  ]
 }
