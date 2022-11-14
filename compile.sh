@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SRCURL="http://github.com/iacs"
+SRCURL="https://github.com/iacs/prof"
 
 source venv/bin/activate
 qr --factory=svg-path $SRCURL > assets/img/qrcode.svg
