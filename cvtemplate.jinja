@@ -54,7 +54,7 @@
           <table class="top-align">
             <tbody>
               {% for item in cat.content %}
-              <tr>
+              <tr class="avoid-pb">
                 <td>
                   <div class="pad-compact font-bold">{{ item.name }}</div>
                 </td>
@@ -78,7 +78,9 @@
             </tbody>
           </table>
         </div>
-        {% endfor %}
+        {% if not loop.last %}
+        <div class="insert-pb"></div>
+        {% endif %} {% endfor %}
         <!-- SKILLS -->
         <div class="row section-header">
           <h2>Skills</h2>

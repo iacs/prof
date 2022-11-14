@@ -73,11 +73,24 @@ img {
   font-style: italic;
 }
 
-/* PAGE DIRECTIVES */
+/* DIRECTIVES */
 
 @page {
   size: a4 portrait;
   margin: 3mm;
+}
+
+@media print {
+  .insert-pb {
+    clear: both;
+    page-break-after: always;
+  }
+
+  .avoid-pb {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    page-break-after: avoid;
+  }
 }
 
 /* STYLES */
@@ -86,7 +99,7 @@ img {
   --color-text: black;
   --border-color: black;
   --border-size: 2px;
-  --color-text-muted: #777777;
+  --color-text-muted: #a6a6a6;
 }
 
 h3 {
