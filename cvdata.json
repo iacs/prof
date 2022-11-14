@@ -15,15 +15,19 @@
       "content": [
         {
           "name": "Python 3",
-          "lvl": 4
-        },
-        {
-          "name": "Javascript",
           "lvl": 5
         },
         {
+          "name": "JavaScript",
+          "lvl": 5
+        },
+        {
+          "name": "TypeScript",
+          "lvl": 4
+        },
+        {
           "name": "Java",
-          "lvl": 2
+          "lvl": 3
         },
         {
           "name": "Rust",
@@ -52,7 +56,11 @@
   "unranked": [
     {
       "title": "Technologies",
-      "content": ["HTML5", "CSS3", "NoSQL", "SASS/SCSS"]
+      "content": ["HTML5", "CSS3", "NoSQL", "SASS/SCSS", "GraphQL"]
+    },
+    {
+      "title": "Software & tools",
+      "content": ["Docker", "Webpack", "Jest", "MongoDB", "RabbitMQ"]
     },
     {
       "title": "Frameworks & libraries",
@@ -67,12 +75,8 @@
       ]
     },
     {
-      "title": "Software & tools",
-      "content": ["Docker", "Webpack", "Jest", "MongoDB", "RabbitMQ"]
-    },
-    {
       "title": "Methodologies",
-      "content": ["Scrum", "Kanban", "Agile"]
+      "content": ["REST", "Scrum", "Kanban", "Agile", "KM"]
     }
   ],
   "milestones": [
