@@ -1,12 +1,12 @@
 {
   "name": "Iago Mosquera",
-  "jobtitle": "Software Engineer",
-  "blurb": "Iago is a full stack developer with a degree in Computer Science. He enjoys designing and developing systems and learning new technologies. He has experience building frontends in JavaScript/React, microservice-based backends in Python, as a full stack developer in a data analytics solution and as a Scrum master for a team of over 7 members. He has collaborated with several international teams and even remote teams (Sweden – India)",
+  "jobtitle": "Application Systems Engineer, Full-stack developer",
+  "blurb": "I am an applications developer with a degree in Computer Science. I greatly enjoy designing and developing systems and I'm always on the look out for new technologies and tools to refine my workflow. I have extensive experience building full stack web services, both traditional and microservice-based backends in Python and frontends in TypeScript/React. I've also acted as a Scrum master for a team of over 7 members. I have collaborated within several international teams with members of multiple nationalities and backgrounds, and have remote teamwork experience.",
   "contact": {
     "email": "flackon@gmail.com",
     "tlf": "(+46) 709 188 258",
     "homepage": "philomathy.net",
-    "location": "Stockholm, Sweden"
+    "location": "Stockholm, Sweden (willing to relocate to Dublin)"
   },
   "experience_start": "2013-10-01",
   "skills": [
@@ -84,10 +84,10 @@
       "title": "Work experience",
       "content": [
         {
-          "period": "2021/06 - ongoing",
+          "period": "2021/06 - 2023/02",
           "name": "Emblasoft AB",
-          "role": "Web app developer",
-          "blurb": "Sole developer of an application for managing and testing mobile networks. The application consists of a web frontend that generates data files and interfaces with Emblasoft's own tools and APIs, unifying them under a single dashboard. Used for testing and measuring different indicators of mobile networks and data connections.",
+          "role": "App developer",
+          "blurb": "Sole developer of a single-page application for managing and testing mobile networks. The app consists of a web frontend that generates data files and integrates with Emblasoft's preexisting suite of tools and APIs, unifying them under a single dashboard. Utilized for testing and measuring different indicators of mobile networks and data connections.",
           "competences": [
             "React",
             "JavaScript",
